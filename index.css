@@ -19,7 +19,6 @@ body, * {
     width: 70vw;
     margin: auto;
     padding: 100px 0;
-    
 }
 
 .title{
@@ -119,30 +118,51 @@ to {
 
 .event {
     height: 10vh;
-    background-color: blue;
-    margin: 100px;
+
+    margin: 100px 0px;
+    font-size: 0px;
+
+    border: dashed;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: stretch;
 }
 
- .date, .info, .pic {
+.date, .info{
     height: 100%;
-    overflow: scroll;
-    display: inline-block;
-    border: solid;
-    margin:  0px;
-    padding: 0px;
-    border-spacing: 0px;
-
  }
 
 .date {
     width: 10%;
     text-align: center;
+    overflow: hidden;
+    border-right: dashed;
+    margin-right: 10px;
 }
 
 .info{
-    width: 60%;
+    width: 100%;
+    overflow-y: scroll;
 }
 
-.pic{
-    width: 10%;
+::-webkit-scrollbar {
+    width: 10px;
+    
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
