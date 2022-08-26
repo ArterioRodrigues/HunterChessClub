@@ -1,0 +1,148 @@
+body, * {
+    font-family: "Lucida Sans Typewriter","Lucida Console",Monaco,"Bitstream Vera Sans Mono",monospace;
+    font-weight: 300;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 26px;
+    margin: 0px;
+    padding: 0px;
+}
+
+  
+.Home {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.data{
+    width: 70vw;
+    margin: auto;
+    padding: 100px 0;
+    
+}
+
+.title{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 110px;
+    line-height: 120px;
+}
+
+.piece {
+    font-size: 130px;
+    display: inline-block;
+
+    animation: 2s wiggle 3s linear infinite;
+    rotate: 45deg;
+    
+}
+
+
+.subtitle {
+    text-align: right;
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+.text {
+    padding: 100px 0px;
+}
+
+.black_pieces{
+    color: black;
+    background-color: white;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    padding: 5px 0px 10px 0px;
+    font-size: 50px;
+}
+
+
+
+
+
+ /****** Animation ******/
+
+ @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+}
+
+@keyframes move {
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }    
+}
+
+mark {
+ 
+    animation: 1.5s highlight 1s 1 normal forwards;
+    background-color: none;
+    background: linear-gradient(90deg, white 50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+}
+  
+@keyframes highlight {
+to {
+    background-position: 0 0;
+    color: black;
+}
+}
+
+
+
+/******Events****/
+
+
+
+.event {
+    height: 10vh;
+    background-color: blue;
+    margin: 100px;
+}
+
+ .date, .info, .pic {
+    height: 100%;
+    overflow: scroll;
+    display: inline-block;
+    border: solid;
+    margin:  0px;
+    padding: 0px;
+    border-spacing: 0px;
+
+ }
+
+.date {
+    width: 10%;
+    text-align: center;
+}
+
+.info{
+    width: 60%;
+}
+
+.pic{
+    width: 10%;
+}
