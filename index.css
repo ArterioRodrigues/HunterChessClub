@@ -26,12 +26,12 @@ body, * {
 .title{
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 8vw;
-    line-height: 8vw;
+    font-size: 5vw;
+    line-height: 6vw;
 }
 
 .piece {
-    font-size: 8vw;
+    font-size: 5vw;
     display: inline-block;
 
     animation: 2s wiggle 3s linear 3;
@@ -76,6 +76,7 @@ body, * {
 
 .text {
     padding: 100px 0px 0px;
+    
 }
 
 .black_pieces{
@@ -220,4 +221,38 @@ to {
 
   border-top-left-radius: 0%;
   border-bottom-right-radius: 0%;
+}
+
+
+.contact{
+  width: 100vw;
+  
+  background-color: black;
+  text-align: center;
+  padding: 100px 0px;
+  text-align: center;
+}
+
+
+
+.logo{
+  width: auto;
+  height: 75px;
+  display: inline-block;
+  padding: 0 20px;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.logo:hover{
+  height: 100px;
+ 
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.inline-block{
+  display: inline-block;
 }
