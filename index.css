@@ -10,8 +10,27 @@ body, * {
     scroll-behavior: smooth ;
 }
 
+.navbar{
+  background-color: black;
+  position: fixed;
+  right: 10px;
+  top: 50%;
+ 
+  width: 70px;
+  z-index: 10;
+  text-align: center;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
+}
+
+a {
+  font-weight: 900;
+}
   
-.Home {
+#Home {
     height: 100vh;
     width: 100vw;
     background-color: black;
@@ -40,7 +59,7 @@ body, * {
 
 .subtitle {
     text-align: right;
-    font-size: 3vw;
+    font-size: 30px;
     padding-top: 10px;
 }
 
@@ -85,7 +104,7 @@ body, * {
     display: inline-flex;
     flex-direction: row-reverse;
     padding: 5px 0px 10px 0px;
-    font-size: 3vw;
+    font-size: 30px;
 }
 
  /****** Animation ******/
@@ -165,6 +184,9 @@ to {
 
 /******Events****/
 
+#Events {
+  background-color: whtie;
+}
 
 
 .event {
@@ -224,7 +246,7 @@ to {
 }
 
 
-.contact{
+#Contact{
   width: 100vw;
   
   background-color: black;

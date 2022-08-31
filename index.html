@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <title>Hunter Chess Club</title>
 </head>
 
 <body>
-    <div class = "Home">
+    <div class="navbar">
+        <ul>
+            <li><a href = "#Home"    onmouseout = "handleNavOut(this)" onmouseover = "handleNavOver(this)" onclick="handleNavClick(this)">E1</a></li>
+            <li><a href = "#Events"  onmouseout = "handleNavOut(this)" onmouseover = "handleNavOver(this)" onclick="handleNavClick(this)">D1</a></li>
+            <li><a href = "#Contact" onmouseout = "handleNavOut(this)" onmouseover = "handleNavOver(this)" onclick="handleNavClick(this)">F1</a></li>
+        </ul>
+    </div>
+
+    <div id = "Home">
         <div class = "data">
 
             <div class = 'subtitle'> 
@@ -114,7 +123,7 @@
         
     </div>
 
-    <div class="contact" style="padding-top: 20px;">
+    <div id="Contact" style="padding-top: 20px;">
 
         <a href="https://discord.gg/5zrtsHwN" target="blank">
             <img  src="assets/icons8-discord-bubble-100.png" alt="arteriorodrigues" class = "logo"/>
