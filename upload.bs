@@ -1,5 +1,16 @@
 #!/bin/bash
+
+
 git status
+
+
 git add . 
-git commit -m "Update"
+
+echo "Files Added"
+echo "Enter commit message"
+
+echo "\t > "
+read var
+
+git commit -m "$var"
 git push

@@ -60,7 +60,7 @@ body, * {
     width: 0px;
     opacity: 0;
 
-    left: calc(50% - 18px);
+    left: calc(50% - 22px);
     
     font-weight: bold;
     position: absolute;
@@ -80,11 +80,7 @@ body, * {
     
 }
 
-.black_pieces{
-    color: black;
-    background-color: white;
-    display: inline-flex;
-    flex-direction: row-reverse;
+.pieces{
     padding: 5px 0px 10px 0px;
     font-size: 30px;
 }
