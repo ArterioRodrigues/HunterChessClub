@@ -9,8 +9,6 @@ git add .
 echo "Files Added"
 echo "Enter commit message"
 
-echo "\t > "
-read var
 
-git commit -m "$var"
+git commit -m "Update"
 git push
