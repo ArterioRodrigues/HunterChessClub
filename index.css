@@ -309,3 +309,11 @@ hr{
   bottom: 0;
   font-size: 5px;
 }
+
+@media (max-width: 800px) {
+  .data{
+    width: 90vw;
+    margin: auto;
+    padding: 100px 0;
+}
+}
