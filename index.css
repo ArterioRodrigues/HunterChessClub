@@ -11,7 +11,7 @@ body, * {
 }
   
 #Home {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-color: black;
     border-width: 3px;
