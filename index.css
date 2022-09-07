@@ -11,19 +11,20 @@ body, * {
 }
 
 .navbar{
-  background-color: black;
+  
   position: fixed;
-  right: 10px;
-  top: 50%;
- 
-  width: 70px;
   z-index: 10;
   text-align: center;
+
+  width: 100%;
+
+  background-color: black;
 }
 
 li {
   padding: 10px;
   list-style-type: none;
+  display: inline-block;
 }
 
 a {
