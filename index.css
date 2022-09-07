@@ -9,31 +9,13 @@ body, * {
     text-decoration: none;
     scroll-behavior: smooth ;
 }
-
-.navbar{
-  background-color: black;
-  position: fixed;
-  right: 10px;
-  top: 50%;
- 
-  width: 70px;
-  z-index: 10;
-  text-align: center;
-}
-
-li {
-  padding: 10px;
-  list-style-type: none;
-}
-
-a {
-  font-weight: 900;
-}
   
 #Home {
     height: 100vh;
     width: 100vw;
     background-color: black;
+    border-width: 3px;
+
 }
 
 .data{
@@ -46,7 +28,7 @@ a {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 5vw;
-    line-height: 6vw;
+    line-height: 7vw;
 }
 
 .piece {
@@ -172,7 +154,16 @@ mark {
     background-size: 200% 100%;
     background-position: 100% 0;
 }
+
+meeting {
   
+  padding: 2px;
+  font-size: 1vw;
+  line-height: 1vw;
+  text-align: center;
+  font-weight: 900px;
+  display: block;
+}
 @keyframes highlight {
 to {
     background-position: 0 0;
@@ -180,7 +171,10 @@ to {
 }
 }
 
-
+hr{
+    border-style: dashed none none none;
+    border-width: 3px;
+}
 
 /******Events****/
 
@@ -198,17 +192,12 @@ to {
     border:dashed;
     border-radius: 10px;
 
-    border-top: solid;
-    border-top-left-radius: 0%;
-    border-top-right-radius: 0%;
-
     display: flex;
     align-items: stretch;
 }
 
 .date, .info{
     height: 100%;
-    
     
  }
 
@@ -222,7 +211,7 @@ to {
 
 .info{
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 
@@ -247,27 +236,29 @@ to {
 
 
 #Contact{
-  width: 100vw;
-  
+  width: 100vw; 
   background-color: black;
-  text-align: center;
   padding: 100px 0px;
-  text-align: center;
 }
 
 
 
-.logo{
-  width: auto;
-  height: 75px;
-  display: inline-block;
-  padding: 0 20px;
+.logo, .logo_text{
+  width: 40px;
+  height: auto;
+  display: block;
+  padding: 10px 0px;
   transition: all 0.3s ease;
   color: white;
+  display: inline-block;
 }
 
-.logo:hover{
-  height: 100px;
+.logo_text{
+  width:60px;
+}
+
+.logo:hover , .logo_text:hover{
+  width: 60px;
  
 }
 
@@ -277,4 +268,48 @@ to {
 
 .inline-block{
   display: inline-block;
+}
+
+.contact_right {
+  width: 50%;
+  height: 100%;
+  padding: 30px;
+}
+
+.contact_tile{
+  font-weight: 900px;
+  text-transform: uppercase;
+  font-size: 2vw;
+  line-height: 2vw;
+}
+
+.contact_left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.contact_container{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.contact_link{
+  display: flex;
+  align-items: center;
+}
+
+.contact_text{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.trade {
+  padding-top: 20px;
+  text-align: right;
+  bottom: 0;
+  font-size: 5px;
 }

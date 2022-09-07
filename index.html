@@ -4,44 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
     <title>Hunter Chess Club</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <ul>
-            <li><a href = "#Home"    onmouseout = "handleNavOut(this)" onmouseover = "handleNavOver(this)" onclick="handleNavClick(this)">E1</a></li>
-            <li><a href = "#Events"  onmouseout = "handleNavOut(this)" onmouseover = "handleNavOver(this)" onclick="handleNavClick(this)">D1</a></li>
-            <li><a href = "#Contact" onmouseout = "handleNavOut(this)" onmouseover = "handleNavOver(this)" onclick="handleNavClick(this)">F1</a></li>
-        </ul>
-    </div>
+    <nav id = "navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/hccc-logo.png" width="30" height="30" class="d-inline-block align-top" alt="" style="border-radius: 20%;">
+            HCCC
+        </a>
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Home" onclick="handleNavClick(this)">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Events" onclick="handleNavClick(this)">Events</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact" onclick="handleNavClick(this)">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+    </nav>
 
     <div id = "Home">
         <div class = "data">
-
+            <!--- 
             <div class = 'subtitle'> 
                 <div class = "black_pieces">♚ ♛ ♜ ♝ ♞</div>
             </div>
             <div class = 'subtitle'>♚ ♛ ♜ ♝ ♞</div>
-            
+            --->
             <h1 class="title">
                 <mark class = "title"> Hunter</mark>  <div class = "piece"> ♛ </div> <br>
 
                 Chess Club
             </h1>
             
-
+            <hr>
+         
             <p class="text" >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo excepturi blanditiis 
-                quibusdam tenetur qui odio perferendis eum quasi aliquid odit ea voluptatum nisi, voluptatibus 
-                ad, modi repudiandae magnam sit fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Recusandae itaque sint, quia officia rerum quisquam provident debitis quo minima labore facilis 
-                consectetur dolorum molestias nostrum quibusdam aspernatur eius obcaecati ipsum?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quaerat debitis quos veniam magni aut soluta 
-                sapiente eaque, nulla, voluptas repellat cupiditate cum cumque accusamus asperiores sequi. Expedita, 
-                beatae tempora?
+                <i>We meet everyday in the West Building 3rd Floor by the Escaltors. </i><br>
+                We invite everyone of all skill levels, from beginners to Grand Masters to scandinavian players 👀, to
+                join our club. We are offering a welcoming and social group to meet and earn about chess. We will be hosting 
+                tournaments and ceminars for beginners to learn about chess. You can find information about our event below and 
+                communicated with our club members via discord. <br>
+
+
+                <a href="https://discord.gg/5zrtsHwN" target="blank" style="display:inline-block; float: right;">
+                    <img  src="assets/icons8-discord-bubble-100.png" alt="arteriorodrigues" class = "logo_text"/>
+                </a>
+                
             </p>
 
             <div style=" padding-top:100px ;">
@@ -61,7 +85,7 @@
 
 
             <h1 class = "title" >
-                <mark class = "title"> Upcoming</mark> <br>
+                <mark class = "title">Upcoming</mark> <br>
                 Events
     
             </h1>
@@ -125,15 +149,39 @@
 
     <div id="Contact" style="padding-top: 20px;">
 
-        <a href="https://discord.gg/5zrtsHwN" target="blank">
-            <img  src="assets/icons8-discord-bubble-100.png" alt="arteriorodrigues" class = "logo"/>
-        </a>
+        <div class = "contact_container">
+            <div class = "contact_right">
+                <div class = "contact_tile">Hunter Chess Club</div><br>
+                <p>695 Park Ave, <br>
+                    New York, <br>
+                    NY 10065</p>
+            </div>
+    
+            <div class = "contact_left">
+                <a href="https://discord.gg/5zrtsHwN" target="blank" class = "contact_link">
+                    <img  src="assets/icons8-discord-bubble-100.png" alt="arteriorodrigues" class = "logo"/>
+                    <p class = "contact_text">DISCORD</p>
+                </a>
+                <a href="https://www.chess.com/club/hunter-college-chess-club" target="blank" class = "contact_link">
+                    <img  src="assets/chess.png" alt="arteriorodrigues" class = "logo"/>
+                    <p class = "contact_text">CHESS.COM</p>
+                </a>
+                <a href="https://lichess.org/team/hunter-college-chess-club" target="blank" class = "contact_link">
+                    <img  src="assets/lichess.webp" alt="arteriorodrigues" class = "logo"/>
+                    <p class = "contact_text">LICHESS.COM</p>
+                </a>
+    
+                <a href="mailto: hunterchess22@gmail.com"  class = "contact_link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png?20201210105308" alt="arteriorodrigues" class = "logo" />
+                    <p class = "contact_text">GMAIL</p>
+                </a>
+            </div>
+        </div>
+       
 
-        
-
-        <div style="padding-top: 20px;">
-            <p class = "bold inline-block" style="color: white ;" >Arterio Rodrgiues</p>
-            <p class = "inline-block" style="color: white ;" >--- Computer Scientist</p>
+        <div  class = "trade">
+            <p class = "bold inline-block" style="color: white ;  font-size: 7px;" >Arterio Rodrgiues</p>
+            <p class = "inline-block" style="color: white ; font-size: 7px;" >Computer Scientist</p>
         </div>
     </div>
 

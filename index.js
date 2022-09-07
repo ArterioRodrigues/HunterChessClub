@@ -1,36 +1,23 @@
-function handleNavOver(node){
-    node.parentNode.style.animation = "wiggle 3s linear infinite";
-    if(node.innerText == "E1"){
-        node.innerText = "Home"
-    }    
-    if(node.innerText == "D1"){
-        node.innerText = "Events"
-    }
-    if(node.innerText == "F1"){
-        node.innerText = "Contact"
-    }
+function handleNavClick(node){  
     
-    console.log(node.attributes)
-    console.log(node.nodeValue)
-}
 
-function handleNavOut(node){
-    node.parentNode.style.animation = "";
-    if(node.innerText == "Home"){
-        node.innerText = "E1"
-    }    
-    if(node.innerText == "Events"){
-        node.innerText = "D1"
-    }
-    if(node.innerText == "Contact"){
-        node.innerText = "F1"
-    }
-    
-    console.log(node.attributes)
-    console.log(node.nodeValue)
-}
+ 
+    nav_items = document.getElementsByClassName('nav-link');
 
-function handleNavClick(node){
-    
-    
+    for(let i = 0; i < 3; i++)
+        nav_items[i].classList.remove("active")
+
+    node.classList.add("active");
+
+    if(node.innerText == "Events" || node.innerText == "Contact"){    
+        nav = document.getElementById('navbar')
+        nav.classList.add("navbar-dark")
+        nav.classList.add("bg-dark")  
+    }
+    else{
+        nav = document.getElementById('navbar')
+        nav.classList.remove("navbar-dark")
+        nav.classList.remove("bg-dark")  
+
+    }
 }
