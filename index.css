@@ -310,6 +310,14 @@ hr{
   font-size: 5px;
 }
 
+.event_detail{
+  color: white;
+  background-color: black; 
+  padding: 2px;
+  margin: 2px;
+  display: inline-block;
+}
+
 @media (max-width: 800px) {
   .data{
     width: 90vw;
