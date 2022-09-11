@@ -11,7 +11,7 @@ body, * {
 }
   
 #Home {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-color: black;
     border-width: 3px;
@@ -27,8 +27,8 @@ body, * {
 .title{
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 5vw;
-    line-height: 7vw;
+    font-size: 6vw;
+    line-height: 8vw;
 }
 
 .piece {
@@ -60,7 +60,7 @@ body, * {
     width: 0px;
     opacity: 0;
 
-    left: calc(50% - 18px);
+    left: calc(50% - 22px);
     
     font-weight: bold;
     position: absolute;
@@ -76,15 +76,11 @@ body, * {
 }
 
 .text {
-    padding: 100px 0px 0px;
+    padding: 3vh 0px 0px;
     
 }
 
-.black_pieces{
-    color: black;
-    background-color: white;
-    display: inline-flex;
-    flex-direction: row-reverse;
+.pieces{
     padding: 5px 0px 10px 0px;
     font-size: 30px;
 }
@@ -279,7 +275,7 @@ hr{
 .contact_tile{
   font-weight: 900px;
   text-transform: uppercase;
-  font-size: 2vw;
+  font-size: 3vw;
   line-height: 2vw;
 }
 
@@ -312,4 +308,40 @@ hr{
   text-align: right;
   bottom: 0;
   font-size: 5px;
+}
+
+.event_detail{
+  color: white;
+  background-color: black; 
+  padding: 2px;
+  margin: 2px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .data{
+    width: 90vw;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.title{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 7vw;
+  line-height: 10vw;
+}
+
+.text {
+  padding: 2vh 0px 0px;
+  
+}
+
+.contact_tile{
+  font-weight: 900px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 13px;
+}
 }

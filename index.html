@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+
     <title>Hunter Chess Club</title>
 </head>
 
@@ -39,13 +40,34 @@
     </nav>
 
     <div id = "Home">
-        <div class = "data">
-            <!--- 
-            <div class = 'subtitle'> 
-                <div class = "black_pieces">♚ ♛ ♜ ♝ ♞</div>
+        <nav id = "navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="assets/hccc-logo.png" width="30" height="30" class="d-inline-block align-top" alt="" style="border-radius: 20%;">
+                HCCC
+            </a>
+    
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="#Home" onclick="handleNavClick(this)">Home <span class="sr-only">(current)</span></a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="#Events" onclick="handleNavClick(this)">Events</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contact" onclick="handleNavClick(this)">Contact</a>
+                </li>
+              </ul>
             </div>
-            <div class = 'subtitle'>♚ ♛ ♜ ♝ ♞</div>
-            --->
+    
+        </nav>
+
+        <div class = "data">
+            
             <h1 class="title">
                 <mark class = "title"> Hunter</mark>  <div class = "piece"> ♛ </div> <br>
 
@@ -55,94 +77,87 @@
             <hr>
          
             <p class="text" >
-                <i>We meet everyday in the West Building 3rd Floor by the Escaltors. </i><br>
+                <i>We meet everyday in the West Building 3rd Floor by the Escaltors. </i><br><br>
                 We invite everyone of all skill levels, from beginners to Grand Masters to scandinavian players 👀, to
-                join our club. We are offering a welcoming and social group to meet and earn about chess. We will be hosting 
-                tournaments and ceminars for beginners to learn about chess. You can find information about our event below and 
+                join our club. We are offering a welcoming and social group to meet and learn about chess. We will be hosting 
+                tournaments and seminars for beginners to learn about chess. You can find information about our event below and 
                 communicated with our club members via discord. <br>
 
 
-                <a href="https://discord.gg/5zrtsHwN" target="blank" style="display:inline-block; float: right;">
+                <a href="https://discord.gg/PhBuKFFQhS" target="blank" style="display:inline-block; float: right;">
                     <img  src="assets/icons8-discord-bubble-100.png" alt="arteriorodrigues" class = "logo_text"/>
                 </a>
                 
             </p>
-
-            <div style=" padding-top:100px ;">
+            <!--
+            <div style=" padding-top:10vh ;">
                 <a href = "#Events" >
                     <div class = "next"  >
                         ˯
                     </div>
                 </a>
+
+             
             </div>
-            
+             --->
         </div>
     </div>
 
-    <div id = "Events" style="filter: invert(100%) ;">
+
+
+
+    <div id = "Events">
 
         <div class="data " >
 
 
-            <h1 class = "title" >
+            <h1 class = "title" style="filter: invert(100%) ;">
                 <mark class = "title">Upcoming</mark> <br>
                 Events
     
             </h1>
 
-            <div>
-                <div class = "event" style="margin-top:100px ;">
-                    <div class = "date">
-                        <div class   = "event-pad-date">
-                                Sep<br>8
-                        </div>
-                        
+            <div id="accordion" style="margin-top:100px ;">
+               
+                <div class="card">
+                    <div class="card-header" id="headingOne" style="background-color: black;">
+                        <button class="btn btn-outline-light mb-0" style="border:none; white-space: normal;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" onclick="handleEventClick(this,'collapseOne')">
+                          Event #1: Fall 2022 HCCC Tournament 🔥  
+                        </button>
                     </div>
-                    <div class = "info" >
-                        <div class = "event-pad">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo excepturi blanditiis 
-                            quibusdam tenetur qui odio perferendis eum quasi aliquid odit ea voluptatum nisi, voluptatibus 
-                            ad, modi repudiandae magnam sit fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Recusandae itaque sint, quia officia rerum quisquam provident debitis quo minima labore facilis 
-                            consectetur dolorum molestias nostrum quibusdam aspernatur eius obcaecati ipsum?
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "event">
-                    <div class = "date">
-                        <div class = "event-pad-date">Sep<br>8</div>
-                    </div>
-
-                    <div class = "info" >
-                        <div class = "event-pad">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo excepturi blanditiis 
-                            quibusdam tenetur qui odio perferendis eum quasi aliquid odit ea voluptatum nisi, voluptatibus 
-                            ad, modi repudiandae magnam sit fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Recusandae itaque sint, quia officia rerum quisquam provident debitis quo minima labore facilis 
-                            consectetur dolorum molestias nostrum quibusdam aspernatur eius obcaecati ipsum?
-                        </div>
-                    </div>
-                </div>
-
-                <div class = "event">
-                    <div class = "date">
-                        <div class = "event-pad-date">Sep<br>8</div>
-                    </div>
-
-                    <div class = "info" >
-                        <div class = "event-pad">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo excepturi blanditiis 
-                            quibusdam tenetur qui odio perferendis eum quasi aliquid odit ea voluptatum nisi, voluptatibus 
-                            ad, modi repudiandae magnam sit fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Recusandae itaque sint, quia officia rerum quisquam provident debitis quo minima labore facilis 
-                            consectetur dolorum molestias nostrum quibusdam aspernatur eius obcaecati ipsum?
-                        </div>
-                    </div>
-                </div>
-            
                 
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" style="border:dashed; border-color: black">
+                      <div class="card-body" style="color: black;">
+                            Hunter College Chess Club will be hosting the 3rd Chess Tournament. The tournament is open to all skill levels. It will be 4 week long event
+                            were a match will be held once a week. You will have a week to prepare and challenge your opponent. Standings will be posted on the website with 
+                            first place being given a special prize 🏆
+                            Time Format and standings will be announce later. <br>
+                            
+                            Register Here: <a href = "https://forms.gle/JgqigSZPncVfN4VS9" target = "_blank"> Google Form </a><br>
+                            Where: In Person at Hunter College<br>
+                            When: TBA
+                            
+                      </div>
+                    </div>
+                </div>
+                  
+                <div class="card">
+                <div class="card-header" id="headingTwo" style="background-color: black;">
+                    <button class="btn btn-outline-light collapsed mb-0" style="border:none;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" onclick="handleEventClick(this, 'collapseTwo')">
+                        Event #2: TBA
+                    </button>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" style="border:dashed; border-color: black">
+                    <div class="card-body" style="color: black;">
+                        Details: TBA 🤫 
+                    </div>
+                </div>
+                </div>
+
+             
             </div>
+                    
+                     
         </div>
         
     </div>
@@ -158,7 +173,7 @@
             </div>
     
             <div class = "contact_left">
-                <a href="https://discord.gg/5zrtsHwN" target="blank" class = "contact_link">
+                <a href="https://discord.gg/PhBuKFFQhS" target="blank" class = "contact_link">
                     <img  src="assets/icons8-discord-bubble-100.png" alt="arteriorodrigues" class = "logo"/>
                     <p class = "contact_text">DISCORD</p>
                 </a>
@@ -177,13 +192,8 @@
                 </a>
             </div>
         </div>
-       
-
-        <div  class = "trade">
-            <p class = "bold inline-block" style="color: white ;  font-size: 7px;" >Arterio Rodrgiues</p>
-            <p class = "inline-block" style="color: white ; font-size: 7px;" >Computer Scientist</p>
-        </div>
     </div>
 
+   
 </body>
 </html>

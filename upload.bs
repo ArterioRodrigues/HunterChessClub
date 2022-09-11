@@ -1,5 +1,14 @@
 #!/bin/bash
+
+
 git status
+
+
 git add . 
+
+echo "Files Added"
+echo "Enter commit message"
+
+
 git commit -m "Update"
 git push
