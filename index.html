@@ -11,20 +11,27 @@
 
 <body>
     <div class="navbar">
+        
         <ul>
-            <li><a href = "#Home"    onmouseout = "handleNavOut(this)" onmouseover = "handleNavOver(this)" onclick="handleNavClick(this)">E1</a></li>
-            <li><a href = "#Events"  onmouseout = "handleNavOut(this)" onmouseover = "handleNavOver(this)" onclick="handleNavClick(this)">D1</a></li>
-            <li><a href = "#Contact" onmouseout = "handleNavOut(this)" onmouseover = "handleNavOver(this)" onclick="handleNavClick(this)">F1</a></li>
+            <img class = "nav_img" src = "assets/hccc-logo.png"> 
+                <div class = "nav_title">HCCC </div>
+            </img>
+            
+            <li style = "margin-left: 10px;"><a href = "#Home"    >Home</a></li>
+            <li><a href = "#Events"  >Events</a></li>
+            <li><a href = "#Contact" >Contact</a></li>
         </ul>
     </div>
 
-    <div id = "Home">
-        <div class = "data">
+    <div id = "Home" >
+        <div class = "data" >
 
-            <div class = 'subtitle'> 
+            <!-- <div class = 'subtitle'> 
                 <div class = "black_pieces">♚ ♛ ♜ ♝ ♞</div>
             </div>
-            <div class = 'subtitle'>♚ ♛ ♜ ♝ ♞</div>
+            <div class = 'subtitle'>♚ ♛ ♜ ♝ ♞</div> 
+            colors: pallete: #F5F5F5 #F05454 #30475E #121212
+            -->
             
             <h1 class="title">
                 <mark class = "title"> Hunter</mark>  <div class = "piece"> ♛ </div> <br>
@@ -44,7 +51,7 @@
                 beatae tempora?
             </p>
 
-            <div style=" padding-top:100px ;">
+            <div style=" padding-top:100px;">
                 <a href = "#Events" >
                     <div class = "next"  >
                         ˯
@@ -53,6 +60,8 @@
             </div>
             
         </div>
+
+        
     </div>
 
     <div id = "Events" style="filter: invert(100%) ;">
@@ -125,15 +134,33 @@
 
     <div id="Contact" style="padding-top: 20px;">
 
-        <a href="https://discord.gg/5zrtsHwN" target="blank">
-            <img  src="assets/icons8-discord-bubble-100.png" alt="arteriorodrigues" class = "logo"/>
-        </a>
-
-        
-
-        <div style="padding-top: 20px;">
-            <p class = "bold inline-block" style="color: white ;" >Arterio Rodrgiues</p>
-            <p class = "inline-block" style="color: white ;" >--- Computer Scientist</p>
+        <div class = "contact_container">
+            <div class = "contact_right">
+                <div class = "contact_tile">Hunter Chess Club</div><br>
+                <p>695 Park Ave, <br>
+                    New York, <br>
+                    NY 10065</p>
+            </div>
+    
+            <div class = "contact_left">
+                <a href="https://discord.gg/PhBuKFFQhS" target="blank" class = "contact_link">
+                    <img  src="assets/icons8-discord-bubble-100.png" alt="arteriorodrigues" class = "logo"/>
+                    <p class = "contact_text">DISCORD</p>
+                </a>
+                <a href="https://www.chess.com/club/hunter-college-chess-club" target="blank" class = "contact_link">
+                    <img  src="assets/chess.png" alt="arteriorodrigues" class = "logo"/>
+                    <p class = "contact_text">CHESS.COM</p>
+                </a>
+                <a href="https://lichess.org/team/hunter-college-chess-club" target="blank" class = "contact_link">
+                    <img  src="assets/lichess.webp" alt="arteriorodrigues" class = "logo"/>
+                    <p class = "contact_text">LICHESS.COM</p>
+                </a>
+    
+                <a href="mailto: hunterchess22@gmail.com"  class = "contact_link">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/512px-Gmail_icon_%282020%29.svg.png?20201210105308" alt="arteriorodrigues" class = "logo" />
+                    <p class = "contact_text">GMAIL</p>
+                </a>
+            </div>
         </div>
     </div>
 
