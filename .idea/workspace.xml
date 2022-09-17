@@ -19,9 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2603e87-f8bd-453a-a082-dfd6fdb8011e" name="Default Changelist" comment="Test">
-      <change beforePath="$PROJECT_DIR$/.idea/HunterChessClub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HunterChessClub.iml" afterDir="false" />
+    <list default="true" id="e2603e87-f8bd-453a-a082-dfd6fdb8011e" name="Default Changelist" comment="Started Tournament class and Error Handling class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/tournament/tournament.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/tournament/tournament.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\there\Desktop\other\hcc\tournament\HunterChessClub\main\tournament" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="tournament" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -107,7 +112,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663381814066</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Started Tournament class and Error Handling class">
+      <created>1663386927207</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663386927207</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Started Tournament class and Error Handling class">
+      <created>1663387035846</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663387035846</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,40 +139,42 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Started Tournament class and Error Handling class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started Tournament class and Error Handling class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="776" y="390" key="Git.Interactive.Rebase.Dialog" timestamp="1663381598091">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="776" y="390" key="Git.Interactive.Rebase.Dialog/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663381598091" />
-    <state width="1269" height="404" key="GridCell.Tab.0.bottom" timestamp="1663386848093">
+    <state width="1269" height="404" key="GridCell.Tab.0.bottom" timestamp="1663458031383">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="1269" height="404" key="GridCell.Tab.0.bottom/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663386848093" />
-    <state width="1269" height="404" key="GridCell.Tab.0.center" timestamp="1663386848093">
+    <state width="1269" height="404" key="GridCell.Tab.0.bottom/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663458031383" />
+    <state width="1269" height="404" key="GridCell.Tab.0.center" timestamp="1663458031383">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="1269" height="404" key="GridCell.Tab.0.center/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663386848093" />
-    <state width="1269" height="404" key="GridCell.Tab.0.left" timestamp="1663386848092">
+    <state width="1269" height="404" key="GridCell.Tab.0.center/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663458031383" />
+    <state width="1269" height="404" key="GridCell.Tab.0.left" timestamp="1663458031383">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="1269" height="404" key="GridCell.Tab.0.left/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663386848092" />
-    <state width="1269" height="404" key="GridCell.Tab.0.right" timestamp="1663386848093">
+    <state width="1269" height="404" key="GridCell.Tab.0.left/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663458031383" />
+    <state width="1269" height="404" key="GridCell.Tab.0.right" timestamp="1663458031383">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="1269" height="404" key="GridCell.Tab.0.right/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663386848093" />
+    <state width="1269" height="404" key="GridCell.Tab.0.right/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663458031383" />
     <state x="785" y="352" key="SettingsEditor" timestamp="1663382099690">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="785" y="352" key="SettingsEditor/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663382099690" />
-    <state x="876" y="440" key="Vcs.Push.Dialog.v2" timestamp="1663381831632">
+    <state x="876" y="440" key="Vcs.Push.Dialog.v2" timestamp="1663387064214">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="876" y="440" key="Vcs.Push.Dialog.v2/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663381831632" />
+    <state x="876" y="440" key="Vcs.Push.Dialog.v2/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663387064214" />
     <state x="1093" y="621" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1663386856364">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -162,9 +183,9 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1039" y="568" key="git4idea.rebase.GitRebaseDialog/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663381594502" />
-    <state x="943" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1663384364869">
+    <state x="943" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1663456063712">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="943" y="319" width="672" height="678" key="search.everywhere.popup/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663384364869" />
+    <state x="943" y="319" width="672" height="678" key="search.everywhere.popup/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663456063712" />
   </component>
 </project>
