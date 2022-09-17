@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e2603e87-f8bd-453a-a082-dfd6fdb8011e" name="Default Changelist" comment="Test" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="ONTO" value="refs/remotes/origin/tournament" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="5dc61a7589a571319b568ba43fdda63eabec0b96" />
+  </component>
+  <component name="ProjectId" id="2EsPk1Yb7Gar0zJYW1L3xOhnGd6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2603e87-f8bd-453a-a082-dfd6fdb8011e" name="Default Changelist" comment="" />
+      <created>1663381457831</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663381457831</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Test">
+      <created>1663381505675</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663381505675</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="776" y="390" key="Git.Interactive.Rebase.Dialog" timestamp="1663381598091">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="776" y="390" key="Git.Interactive.Rebase.Dialog/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663381598091" />
+    <state x="785" y="352" key="SettingsEditor" timestamp="1663381780436">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="785" y="352" key="SettingsEditor/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663381780436" />
+    <state x="876" y="440" key="Vcs.Push.Dialog.v2" timestamp="1663381525621">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="876" y="440" key="Vcs.Push.Dialog.v2/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663381525621" />
+    <state x="1039" y="568" key="git4idea.rebase.GitRebaseDialog" timestamp="1663381594502">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1039" y="568" key="git4idea.rebase.GitRebaseDialog/-1920.218.1920.1050/0.0.2560.1410@0.0.2560.1410" timestamp="1663381594502" />
+  </component>
+</project>
