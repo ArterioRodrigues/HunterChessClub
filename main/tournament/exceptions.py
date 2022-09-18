@@ -5,12 +5,12 @@ class ExceptionCatch:
     alphanumerics = string.ascii_letters + string.digits
 
     @staticmethod
-    def match(given, param_name, expected, error, return_var = True):
+    def is_in(given, param_name, error, expected, return_var=True):
         if given in expected:
             if return_var:
                 return given
         else:
-            raise error(param=param_name, given=given, expected=expected)
+            raise error(param=param_name, given=given, expected=f'a value in {expected}')
 
     @staticmethod
     def is_str(given, param_name, error, return_var=True):
@@ -55,20 +55,16 @@ class ExceptionCatch:
     @staticmethod
     def check_stack(error, validations):
         for validation in validations:
-            given = validation[0]
-            param_name = validation[1]
-            error_type = validation[2].lower()
-            if error_type == 'match' and len(validation) >= 4:
-                ExceptionCatch.match(given, param_name, validation[3], error, return_var=False)
-            elif error_type in (str, 'str', 'string', 'is_str'):
-                ExceptionCatch.is_str(given, param_name, error, return_var=False)
-            elif error_type in (int, 'int', 'integer', 'is_int'):
-                ExceptionCatch.is_int(given, param_name, error, return_var=False)
-            elif error_type in ('is_nn_i', 'is_nonneg_int', 'is_nonnegative_int', 'is_nonnegative_integer'):
-                ExceptionCatch.is_nonnegative_int(given, param_name, error, return_var=False)
-            elif error_type in ('an', 'alphanum', 'alphanumeric', 'is_alphanum', 'is_alphanumeric'):
+            given, param_name, exception_to_catch = validation[:3]
+            if exception_to_catch is ExceptionCatch.is_in:
+                if len(validation) >= 4:
+                    ExceptionCatch.is_in(given, param_name, error, validation[3], return_var=False)
+            elif exception_to_catch is ExceptionCatch.is_alphanum:
                 if len(validation) < 4:
                     ExceptionCatch.is_alphanum(given, param_name, error, return_var=False)
                 else:
-                    ExceptionCatch.is_alphanum(given, param_name, error, extra_allowed_chars=validation[3], return_var=False)
+                    ExceptionCatch.is_alphanum(given, param_name, error, extra_allowed_chars=validation[3],
+                                               return_var=False)
+            else:
+                exception_to_catch(given, param_name, error, return_var=True)
         return True

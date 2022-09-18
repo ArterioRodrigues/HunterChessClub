@@ -13,13 +13,10 @@ class Tournament:
         self.t_format = t_format
         self.num_rounds = num_rounds
         e.check_stack(error=Tournament.InitializationError, validations=[
-            (self.name, 'name', 'is_alphanum', '_ '),
-            (self.t_format, 'format', 'match', ['swiss']),
-            (self.num_rounds, 'num_rounds', 'is_nonnegative_int')
+            (self.name, 'name', e.is_alphanum, '_ '),
+            (self.t_format, 'format', e.is_in, ['swiss']),
+            (self.num_rounds, 'num_rounds', e.is_nonnegative_int)
             ])
-        # e.is_alphanum(self.name, 'name', Tournament.InitializationError)
-        # e.match(self.t_format, 'format', ['swiss'], Tournament.InitializationError)
-        # e.is_int(self.num_rounds, 'num_rounds', Tournament.InitializationError)
         self.display_name = display_name
         if self.display_name:
             self.display_name = e.is_alphanum(display_name, 'display_name', Tournament.InitializationError)
